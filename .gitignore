@@ -1,0 +1,24 @@
+# Environment & Config
+includes/config.php
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# PHP
+*.log
+/vendor/
+
+# Uploads (kişisel medya dosyaları repoya girmesin)
+assets/images/uploads/
+
+# ZIP exports
+*.zip

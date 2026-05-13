@@ -1,1 +1,333 @@
-<!-- Aşama 2'de doldurulacak -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Software Engineer & Serial Entrepreneur — Personal Portfolio" />
+  <title>Abdullah İbrahimagaoğlu | Software Engineer & Entrepreneur</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">
+        <span class="logo-bracket">&lt;</span>AI<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="#about"    data-i18n="nav.about">About</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language" title="TR / EN">
+          <span id="langLabel">TR</span>
+        </button>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Dark / Light">
+          <i data-lucide="sun"  class="theme-icon" id="themeIconSun"></i>
+          <i data-lucide="moon" class="theme-icon hidden" id="themeIconMoon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__particles" aria-hidden="true" id="heroParticles"></div>
+      <div class="container hero__content">
+        <div class="hero__badges">
+          <span class="hero__badge">
+            <i data-lucide="code-2"></i>
+            <span data-i18n="hero.badge1">Software Engineer</span>
+          </span>
+          <span class="hero__badge hero__badge--accent2">
+            <i data-lucide="rocket"></i>
+            <span data-i18n="hero.badge2">Serial Entrepreneur</span>
+          </span>
+        </div>
+        <p class="hero__greeting" data-i18n="hero.greeting">Hi, I'm</p>
+        <h1 class="hero__name" id="typedName"></h1>
+        <p class="hero__title">Software Engineer &amp; Serial Entrepreneur</p>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          Building scalable software systems and founding technology-driven ventures.
+          From idea to product, from code to company — full cycle.
+        </p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num">5+</span>
+            <span class="hero__stat-label" data-i18n="hero.stat1">Years Exp.</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">3</span>
+            <span class="hero__stat-label" data-i18n="hero.stat2">Active Ventures</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">20+</span>
+            <span class="hero__stat-label" data-i18n="hero.stat3">Projects Done</span>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">
+            <i data-lucide="layout-grid"></i>
+            <span data-i18n="hero.cta1">View Projects</span>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <i data-lucide="send"></i>
+            <span data-i18n="hero.cta2">Get in Touch</span>
+          </a>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span class="scroll-dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">
+          <span data-i18n="about.title">About</span>
+          <span class="accent"> / Hakkımda</span>
+        </h2>
+        <div class="about__grid">
+          <div class="about__image-wrap">
+            <div class="about__image-frame">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQFAi6T3uGny1g/profile-displayphoto-scale_400_400/B4DZutden4GkAg-/0/1768141746170?e=1780531200&v=beta&t=tA1nzdO3KaSWeoN8OygUvrlJlWn1FiLB2fVQbgeNafk"
+                alt="Abdullah İbrahimagaoğlu"
+                class="about__img"
+                loading="lazy"
+                onerror="this.src='assets/images/project-placeholder.png'"
+              />
+            </div>
+            <div class="about__social">
+              <a href="https://github.com/abdullahib" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/abdullah-ibrahimagaoglu/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="mailto:abdullahibrahimagaoglu@gmail.com" aria-label="Email" class="social-btn">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+          <div class="about__text">
+            <div class="about__intro">
+              <p data-i18n="about.p1">
+                Software engineering and entrepreneurship aren't two separate paths for me — they're two sides of the same coin.
+                I combine technical depth with business acumen: I write code and build companies.
+              </p>
+              <p data-i18n="about.p2">
+                From frontend to backend, from system architecture to product strategy — I think full-stack.
+                Clean code, scalable architecture, and user-centric design are the core principles of every project I build.
+              </p>
+            </div>
+
+            <div class="about__highlights">
+              <div class="highlight-item">
+                <i data-lucide="graduation-cap"></i>
+                <div>
+                  <strong data-i18n="about.h1title">Software Engineering</strong>
+                  <span data-i18n="about.h1sub">Computer Engineering graduate</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="trending-up"></i>
+                <div>
+                  <strong data-i18n="about.h2title">Serial Entrepreneur</strong>
+                  <span data-i18n="about.h2sub">Founder of multiple tech ventures</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="globe"></i>
+                <div>
+                  <strong data-i18n="about.h3title">Full-Stack Developer</strong>
+                  <span data-i18n="about.h3sub">Web, API, mobile & cloud systems</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__skills">
+              <div class="skill-group">
+                <h3><i data-lucide="monitor"></i> Frontend</h3>
+                <ul>
+                  <li>HTML5 / CSS3</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>React / Next.js</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3><i data-lucide="server"></i> Backend</h3>
+                <ul>
+                  <li>PHP 8+ / Laravel</li>
+                  <li>Node.js / Express</li>
+                  <li>MySQL / PostgreSQL</li>
+                  <li>REST API / GraphQL</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3><i data-lucide="wrench"></i> <span data-i18n="about.tools">Tools</span></h3>
+                <ul>
+                  <li>Git / GitHub</li>
+                  <li>Docker / Linux</li>
+                  <li>AWS / Cloud</li>
+                  <li>Agile / Scrum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">
+          <span data-i18n="projects.title">Projects</span>
+          <span class="accent"> / Projeler</span>
+        </h2>
+        <div class="projects__filters" id="projectFilters" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">
+            <i data-lucide="grid-3x3"></i> <span data-i18n="projects.all">All</span>
+          </button>
+          <button class="filter-btn" data-filter="Web">
+            <i data-lucide="globe"></i> Web
+          </button>
+          <button class="filter-btn" data-filter="API">
+            <i data-lucide="plug"></i> API
+          </button>
+          <button class="filter-btn" data-filter="Mobile">
+            <i data-lucide="smartphone"></i> Mobile
+          </button>
+        </div>
+        <div class="projects__grid" id="projectsGrid">
+          <div class="projects__loading" id="projectsLoading">
+            <span class="spinner"></span>
+            <span data-i18n="projects.loading">Loading projects...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">
+          <span data-i18n="contact.title">Contact</span>
+          <span class="accent"> / İletişim</span>
+        </h2>
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p data-i18n="contact.intro">
+              Have a project idea? Want to discuss investment or collaboration?
+              Leave a message and I'll get back to you as soon as possible.
+            </p>
+            <ul class="contact__links">
+              <li>
+                <span class="contact__icon"><i data-lucide="mail"></i></span>
+                <a href="mailto:abdullahibrahimagaoglu@gmail.com">abdullahibrahimagaoglu@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact__icon"><i data-lucide="linkedin"></i></span>
+                <a href="https://www.linkedin.com/in/abdullah-ibrahimagaoglu/" target="_blank" rel="noopener">LinkedIn</a>
+              </li>
+              <li>
+                <span class="contact__icon"><i data-lucide="github"></i></span>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+              </li>
+            </ul>
+            <div class="contact__availability">
+              <span class="availability-dot"></span>
+              <span data-i18n="contact.available">Available for new projects &amp; collaborations</span>
+            </div>
+          </div>
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="contact.name">Full Name *</label>
+              <div class="input-wrap">
+                <i data-lucide="user" class="input-icon"></i>
+                <input type="text" id="name" name="name" autocomplete="name"
+                       data-placeholder-en="Your Full Name"
+                       data-placeholder-tr="Adınız Soyadınız"
+                       placeholder="Your Full Name" />
+              </div>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.email">Email *</label>
+              <div class="input-wrap">
+                <i data-lucide="mail" class="input-icon"></i>
+                <input type="email" id="email" name="email" autocomplete="email"
+                       data-placeholder-en="example@mail.com"
+                       data-placeholder-tr="ornek@mail.com"
+                       placeholder="example@mail.com" />
+              </div>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="contact.subject">Subject *</label>
+              <div class="input-wrap">
+                <i data-lucide="tag" class="input-icon"></i>
+                <input type="text" id="subject" name="subject"
+                       data-placeholder-en="Project proposal, collaboration, consulting..."
+                       data-placeholder-tr="Proje teklifi, iş birliği, danışmanlık..."
+                       placeholder="Project proposal, collaboration, consulting..." />
+              </div>
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.message">Message *</label>
+              <textarea id="message" name="message" rows="5"
+                        data-placeholder-en="Briefly describe your project, budget and timeline..."
+                        data-placeholder-tr="Projenizi, bütçenizi ve zaman çizelgenizi kısaca anlatın..."
+                        placeholder="Briefly describe your project, budget and timeline..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <i data-lucide="send" id="submitIcon"></i>
+              <span id="submitText" data-i18n="contact.send">Send Message</span>
+              <span id="submitSpinner" class="spinner hidden"></span>
+            </button>
+            <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="footerYear"></span> Abdullah İbrahimagaoğlu — <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="footer__tech">
+        <i data-lucide="code-2" style="width:14px;height:14px;vertical-align:middle;"></i>
+        Built with <span class="accent">HTML · CSS · JS · PHP · MySQL</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

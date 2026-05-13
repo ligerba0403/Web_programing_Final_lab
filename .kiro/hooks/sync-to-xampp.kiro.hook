@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "name": "Sync to XAMPP",
+  "description": "Copies changed files from workspace to C:\\xampp\\htdocs\\portfolio automatically on save",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.php",
+      "**/*.html",
+      "**/*.css",
+      "**/*.js",
+      "**/*.sql"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "robocopy \"C:\\Projects\\Web_programing_Final_lab\" \"C:\\xampp\\htdocs\\portfolio\" /E /XD .git .vscode node_modules /XF .gitignore /NFL /NDL /NJH /NJS"
+  }
+}

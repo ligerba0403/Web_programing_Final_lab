@@ -7,7 +7,7 @@
 define('DB_HOST', 'sql210.infinityfree.com');
 define('DB_NAME', 'if0_41916414_portfolio_db');
 define('DB_USER', 'if0_41916414');
-define('DB_PASS', 'GpNB5lv8HV');  // göz ikonuyla gördüğün şifreyi yaz
+define('DB_PASS', '*******');  // göz ikonuyla gördüğün şifreyi yaz
 define('DB_CHARSET', 'utf8mb4');
 
 function getPDO(): PDO {

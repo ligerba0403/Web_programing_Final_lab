@@ -1,0 +1,101 @@
+PROJECT REPORT
+==============
+
+Project Title : Personal Portfolio Website
+Developer     : Abdullah Ibrahimagaoglu
+Date          : May 2026
+
+
+1. PROJECT OVERVIEW
+-------------------
+This project is a full-stack personal portfolio website designed to showcase my
+software engineering skills, projects, and professional background. The website
+allows visitors to browse my work, learn about my experience, and get in touch
+with me directly through a contact form. It also includes a secure admin panel
+for managing portfolio content.
+
+
+2. TECHNOLOGIES USED
+--------------------
+Layer        | Technology
+-------------|------------------------------------------
+Frontend     | HTML5, CSS3, Vanilla JavaScript
+Backend      | PHP 8+
+Database     | MySQL
+Data Layer   | AJAX via Fetch API
+Icons        | Lucide Icons
+Fonts        | Google Fonts (Inter, JetBrains Mono)
+
+
+3. KEY FEATURES
+---------------
+- Dark / Light mode toggle with localStorage persistence
+- Animated typing effect on the hero section
+- Filterable project grid loaded dynamically via AJAX
+- Contact form with both client-side and server-side validation
+- Rate limiting on the contact form (3 messages per IP per hour)
+- Scroll reveal animations
+- Bilingual support (English / Turkish)
+- Fully responsive design (mobile, tablet, desktop)
+- Admin panel with session-based authentication
+- Full CRUD operations for project management
+
+
+4. HOW IT WAS BUILT
+-------------------
+The project follows a classic MVC-inspired structure without using any framework,
+keeping the stack lightweight and straightforward.
+
+DEVELOPMENT PROCESS:
+I used AI-assisted development tools to accelerate the development process:
+- Claude AI was used to create a detailed specification file that outlined
+  the project requirements, features, and technical architecture
+- Cursor IDE and Kiro AI were used for the actual implementation, code generation,
+  and debugging throughout the development cycle
+- This AI-assisted workflow allowed me to focus on design decisions and business
+  logic while automating repetitive coding tasks
+
+[ INSERT SCREENSHOT HERE — Homepage / Hero section ]
+
+FRONTEND ARCHITECTURE:
+The frontend is a single index.html file styled with a custom CSS file using
+CSS Grid and Flexbox for layout. JavaScript handles the theme toggle, language
+switching, scroll animations, and AJAX calls to the backend API. The design
+is fully responsive and includes smooth transitions and animations for better
+user experience.
+
+[ INSERT SCREENSHOT HERE — Projects section / filter buttons ]
+
+BACKEND ARCHITECTURE:
+The backend consists of PHP scripts under the api/ and admin/ directories.
+The api/get_projects.php endpoint returns project data as JSON, which the
+frontend fetches and renders dynamically. The api/send_message.php endpoint
+handles contact form submissions, validates input server-side, and stores
+messages in the database with IP-based rate limiting to prevent spam.
+
+[ INSERT SCREENSHOT HERE — Admin panel / dashboard ]
+
+DATABASE DESIGN:
+The database is MySQL with three tables: users (admin authentication),
+projects (portfolio items), and messages (contact form submissions).
+Passwords are stored as bcrypt hashes for security. The admin panel is
+protected by PHP session authentication and allows adding, editing, and
+deleting projects through a clean interface.
+
+
+5. PROJECT STRUCTURE
+--------------------
+portfolio/
+├── index.html
+├── database.sql
+├── assets/        ->  CSS, JS, images
+├── api/           ->  JSON endpoints (projects, contact)
+├── admin/         ->  Admin panel (CRUD + auth)
+└── includes/      ->  DB connection, auth helpers
+
+
+6. SETUP
+--------
+The project runs on a standard LAMP/XAMPP stack. After importing database.sql
+into MySQL and configuring the database credentials in includes/db.php, the
+site is ready to use locally or on any PHP-capable web server.
